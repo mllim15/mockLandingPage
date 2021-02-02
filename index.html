@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!--
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+    </script>
+    -->
+
+    <!--US#1: header with id="header"-->
+    <header id="header">
+        <!--US#3: nav with id="nav-bar"-->
+        <nav id="nav-bar">
+            <!--US#2: image with id="header-img"-->
+            <a href="/"><img id="header-img"
+                    src="https://assets.website-files.com/5989b82422e8860001ac40a9/59974621e4afd50001551c3e_actioncamera_logo.png"
+                    alt="Camera store logo" height="50px" /></a>
+            <!--US#4: 3 clickable elements with class="nav-link"-->
+            <!--US#5: taken to corresponding section of page when a .nav-link button is clicked-->
+            <a class="nav-link" href="#cameras">Cameras</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div id="form-div">
+        <div class="form-content">
+            <h1>Join Now</h1>
+            <p>To receive our weekly newsletters to learn more about cameras and great offers!</p>
+            <!--US#7: form element with id="form"-->
+            <!--US#12: email is submitted to static pg when #submit element is clicked-->
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <!--US#8: input field with id="email"-->
+                <!--US#9: #email should have a placeholder-->
+                <!--US#10: #email should validate an email is entered-->
+                <input id="email" name="email" type="email" placeholder="Enter your email" required>
+                <br>
+                <!--US#11: submit input with id="submit"-->
+                <input id="submit" type="submit" value="Sign up">
+            </form>
+        </div>
+    </div>
+
+
+    <h2 id="cameras">Featured Cameras</h2>
+    <div class="camera-container">
+        <div class="camera-options">
+            <img src="https://assets.stickpng.com/images/580b57fbd9996e24bc43bfe9.png" alt="" class="camera-img">
+            <h2 class="camera-header">Nikon D3100</h2>
+            <ul class="features">
+                <li class="features-item">Lorem ipsum, dolor sit amet</li>
+                <li class="features-item">Lorem ipsum, dolor sit amet</li>
+            </ul>
+            <a href="#/" class="select-button">Select</a>
+        </div>
+
+        <div class="camera-options">
+            <img src="https://freepngimg.com/thumb/digital_camera/21672-6-digital-slr-camera-transparent.png" alt=""
+                class="camera-img">
+            <h2 class="camera-header">Canon EOS Rebel T2i</h2>
+            <ul class="features">
+                <li class="features-item">Lorem ipsum, dolor sit amet</li>
+                <li class="features-item">Lorem ipsum, dolor sit amet</li>
+            </ul>
+            <a href="#/" class="select-button">Select</a>
+        </div>
+
+        <div class="camera-options">
+            <img src="https://1.img-dpreview.com/files/p/E~C0x0S868x868T1200x1200~articles/1671649461/GR_Left_upper_surface_Flash_ON-sq.png"
+                alt="" class="camera-img">
+            <h2 class="camera-header">Ricoh GR II</h2>
+            <ul class="features">
+                <li class="features-item">Lorem ipsum, dolor sit amet</li>
+                <li class="features-item">Lorem ipsum, dolor sit amet</li>
+            </ul>
+            <a href="#/" class="select-button">Select</a>
+        </div>
+    </div>
+
+
+    <div id="about">
+        <h2>About</h2>
+        <!--US#6: embedded product video with id="video"-->
+        <div id="product-vid">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/gBqk189JGcM" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div id="contact">
+        <h2>Contact</h2>
+        <div class="contact">
+            <p><i class="fas fa-map-marker-alt"></i> 123 Random Highway, Los Angeles, CA 12345</p>
+            <p><i class="fas fa-phone-alt"></i> +1 (123)456-7890</p>
+            <p><i class="fas fa-envelope"></i> support@canonland.com</p>
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
+
+<!--
+User Story #13: The navbar should always be at the top of the viewport.
+
+User Story #14: My product landing page should have at least one media query.
+
+User Story #15: My product landing page should utilize CSS flexbox at least once.
+-->
